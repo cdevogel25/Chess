@@ -2,14 +2,14 @@
 
 namespace Chess
 {
-    public interface IDraggable
+    public interface ITargetable 
     {
         Rectangle Rectangle { get; }
         Vector2 Position { get; set; }
 
-        void RegisterDraggable()
+        void RegisterTargetable()
         {
-            DragDropManager.AddDraggable(this);
+            DragDropManager.AddTarget(this);
         }
     }
 }
