@@ -3,11 +3,12 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Chess
 {
-    public class Knight : Sprite, IDraggable
+    public class Bishop : Piece, IDraggable
     {
-        public Knight(Texture2D tex, Vector2 position) : base(tex, position)
+        public Bishop(Texture2D tex, Vector2 position) : base(tex, position)
         {
             (this as IDraggable).RegisterDraggable();
         }
     }
 }
+
